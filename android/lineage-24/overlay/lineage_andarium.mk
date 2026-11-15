@@ -267,7 +267,6 @@ KERNARIUM_REMOVED_PACKAGES := \
     EyesFreeVidService \
     Gallery2 \
     ImsServiceEntitlement \
-    Jelly \
     MmsService \
     Music \
     MusicFX \
@@ -464,6 +463,10 @@ PRODUCT_PACKAGES += KernariumWifiOverlay
 # about 54 MiB at idle. KernariumPinnerOverlay (rro/KernariumPinnerOverlay)
 # sets the home pin size to zero and leaves the WebView pin as it was.
 PRODUCT_PACKAGES += KernariumPinnerOverlay
+
+# Jelly, LineageOS's browser, is the image's browser; it renders with the
+# system WebView.
+PRODUCT_PACKAGES += Jelly
 
 # Once boot completes, a script saves the virtual Wi-Fi network (VirtWifi, open)
 # the first time only. It does not turn Wi-Fi on, and a network the user forgets

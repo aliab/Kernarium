@@ -426,7 +426,6 @@ for package in \
 	F-Droid \
 	F-DroidPrivilegedExtension \
 	fastbootd \
-	Jelly \
 	lineage_charger_animation \
 	lineage_charger_animation_vendor \
 	Profiles \
@@ -465,6 +464,8 @@ fi
 	fail "the Wi-Fi overlay that turns MAC randomization off is absent"
 [[ "$PRODUCT_PACKAGES" == *" KernariumPinnerOverlay "* ]] ||
 	fail "the overlay that releases the home app's memory pin is absent"
+[[ "$PRODUCT_PACKAGES" == *" Jelly "* ]] ||
+	fail "the browser is absent"
 [[ "$PRODUCT_PACKAGES" == *" SecureElement "* ]] ||
 	fail "the OMAPI service that SEService clients bind on demand is absent"
 [[ "$PRODUCT_PACKAGES" == *" EasterEgg "* ]] ||

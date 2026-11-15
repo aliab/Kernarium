@@ -72,9 +72,9 @@ UML implementation. `Build.SOC_MANUFACTURER` and `SOC_MODEL` are `Kernarium` and
   are 4 KiB aligned. ABI support does not lower the minimum installable target
   SDK; test an older APK with `adb install --bypass-low-target-sdk-block`.
 - **Applications.** Settings, Trebuchet, Files, Package Installer, the LineageOS
-  WebView, LatinIME, ThemePicker and a curated set (gallery, music, calendar,
-  calculator, PDF viewer, backup). There is no browser, app store, install
-  restriction, Google or microG. Applications that need absent hardware or
+  WebView, the Jelly browser, LatinIME, ThemePicker and a curated set (gallery,
+  music, calendar, calculator, PDF viewer, backup). There is no app store,
+  install restriction, Google or microG. Applications that need absent hardware or
   LineageOS cloud services are excluded by name in the product makefile, and the
   build and the verifier assert that list.
 - **Signature spoofing.** The image ships no Google or microG software, and
